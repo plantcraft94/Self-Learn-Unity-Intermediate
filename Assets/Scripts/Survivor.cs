@@ -7,6 +7,7 @@ public class Survivor : MonoBehaviour
 	[SerializeField] float maxHealth;
 	[SerializeField] float speed;
 	[SerializeField] float fireRate;
+	[SerializeField] Weapon weapon;
 
 	private void Start()
 	{
@@ -14,7 +15,7 @@ public class Survivor : MonoBehaviour
 	}
 	private void Update()
 	{
-
+		weapon.Fire(fireRate);
 	}
 
 	public void Move(float dir)
