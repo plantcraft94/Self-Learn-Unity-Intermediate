@@ -351,6 +351,8 @@ GameObject:
   - component: {fileID: 2064538499}
   - component: {fileID: 2064538498}
   - component: {fileID: 2064538497}
+  - component: {fileID: 2064538501}
+  - component: {fileID: 2064538500}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -459,6 +461,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2064538500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064538496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e1a1462e59e014db1392cc0a531224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Survivor
+  <currentHealth>k__BackingField: 100
+  maxHealth: 100
+  speed: 8
+  fireRate: 15
+--- !u!114 &2064538501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064538496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 088567a1add357643a4b8d5beddb10de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  playerName: plantcraft94
+  survivor: {fileID: 2064538500}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

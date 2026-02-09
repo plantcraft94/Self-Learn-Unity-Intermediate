@@ -17,16 +17,16 @@ public class Survivor : MonoBehaviour
 
 	}
 
-	void Move(float speed)
+	public void Move(float dir)
 	{
-		rb.linearVelocityX = speed;
+		rb.linearVelocityX = dir * speed;
 	}
-	void TakeDamage(float damage)
+	public void TakeDamage(float damage)
 	{
 		currentHealth -= damage;
 		Death();
 	}
-	void Heal(float amount)
+	public void Heal(float amount)
 	{
 		currentHealth += amount;
 		if (currentHealth > maxHealth)
